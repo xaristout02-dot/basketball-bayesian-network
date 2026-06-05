@@ -2,7 +2,7 @@
 <!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
 <smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
 	<nodes>
-		<cpt id="PlayerForm">
+		<cpt id="TeamForm">
 			<state id="High" />
 			<state id="Medium" />
 			<state id="Low" />
@@ -28,15 +28,15 @@
 			<state id="High" />
 			<state id="Medium" />
 			<state id="Low" />
-			<parents>PlayerForm Node2 Node3</parents>
+			<parents>TeamForm Node2 Node3</parents>
 			<probabilities>0.35 0.4 0.25 0.55 0.3 0.15 0.5 0.32 0.18 0.7 0.22 0.08 0.62 0.28 0.1 0.82 0.13 0.05 0.15 0.4 0.45 0.3 0.42 0.28 0.25 0.42 0.33 0.45 0.38 0.17 0.4 0.38 0.22 0.6 0.3 0.1 0.05 0.25 0.7 0.12 0.33 0.55 0.1 0.32 0.58 0.22 0.38 0.4 0.2 0.38 0.42 0.38 0.37 0.25</probabilities>
 		</cpt>
 		<cpt id="Node6">
 			<state id="High" />
 			<state id="Medium" />
 			<state id="Low" />
-			<parents>PlayerForm Node2</parents>
-			<probabilities>0.5 0.35 0.15 0.65 0.25 0.1 0.8 0.15 0.05 0.25 0.45 0.3 0.42 0.38 0.2 0.58 0.32 0.1 0.1 0.32 0.58 0.2 0.38 0.42 0.35 0.38 0.27</probabilities>
+			<parents>TeamForm Node2 Node3</parents>
+			<probabilities>0.5 0.35 0.15 0.3 0.45 0.25 0.65 0.25 0.1 0.45 0.35 0.2 0.8 0.15 0.05 0.6 0.28 0.12 0.25 0.45 0.3 0.12 0.38 0.5 0.42 0.38 0.2 0.25 0.42 0.33 0.58 0.32 0.1 0.38 0.4 0.22 0.1 0.32 0.58 0.05 0.25 0.7 0.2 0.38 0.42 0.1 0.32 0.58 0.35 0.38 0.27 0.18 0.4 0.42</probabilities>
 		</cpt>
 		<cpt id="Node7">
 			<state id="Positive" />
@@ -61,68 +61,68 @@
 	</nodes>
 	<extensions>
 		<genie version="1.0" app="GeNIe 5.0.6508.0 ACADEMIC" name="Simple Model for Prediction of Basketball Game Outcomes Using Bayesian Networks">
-			<node id="PlayerForm">
-				<name>PlayerForm</name>
+			<node id="TeamForm">
+				<name>TeamForm</name>
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>411 23 484 68</position>
+				<position>148 31 221 76</position>
 			</node>
 			<node id="Node2">
 				<name>OpponentStrength</name>
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>557 23 659 77</position>
+				<position>294 31 396 85</position>
 			</node>
 			<node id="Node3">
 				<name>TeamFatigue</name>
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>771 22 858 78</position>
+				<position>508 30 595 86</position>
 			</node>
 			<node id="Node4">
 				<name>HomeAway</name>
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>977 20 1058 71</position>
+				<position>714 28 795 79</position>
 			</node>
 			<node id="Node5">
 				<name>OffensePerformance</name>
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>491 184 609 241</position>
+				<position>228 192 346 249</position>
 			</node>
 			<node id="Node6">
 				<name>DefensePerformance</name>
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>672 177 806 235</position>
+				<position>409 185 543 243</position>
 			</node>
 			<node id="Node7">
 				<name>PsychologicalAdvantage</name>
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>864 174 1014 214</position>
+				<position>601 182 751 222</position>
 			</node>
 			<node id="Node8">
 				<name>TeamOverallPerformance</name>
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>645 360 816 411</position>
+				<position>382 368 553 419</position>
 			</node>
 			<node id="MatchResult">
 				<name>MatchResult</name>
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>672 474 771 534</position>
+				<position>409 482 508 542</position>
 			</node>
 		</genie>
 	</extensions>
